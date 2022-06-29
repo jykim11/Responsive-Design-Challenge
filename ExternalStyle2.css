@@ -1,3 +1,4 @@
+/* Overall CSS layout for the whole document. */
 * {
 	margin: 0;
 	padding: 0;
@@ -5,17 +6,18 @@
 	font-family: 'Century Gothic', monospace;
 }
 
-nav a {
-	color: gray;
-	text-decoration: none;
-	font-size: 40px;
-}
-
+/**** Navigation styles ****/
 nav {
 	font-size: 30px;
 	text-align: right;
 	word-spacing: 15px;
 
+}
+
+nav a {
+	color: gray;
+	text-decoration: none;
+	font-size: 40px;
 }
 
 nav a.active {
@@ -28,12 +30,14 @@ nav a:hover {
 	color: teal
 }
 
+/**** Styles for Body ****/
 Body {
 	background-color: white;
 	font-family: cambria;
 	color: gray;
 }
 
+/**** Header & Paragraph styles ****/
 H1 {
 	font-size: 50pt;
 	text-align: right
@@ -65,44 +69,6 @@ P {
 	font-family: monospace;
 }
 
-Table {
-	width: 90%;
-	height: 20%;
-	font-family: monospace;
-	color: white;
-	background-color: green;
-	margin: 3rem;
-	border-color: darkgreen;
-	font-size: 60px;
-	border-spacing: 5;
-}
-
-Form {
-	font-family: monospace;
-	text-align: center;
-	color: white;
-	background-color: green;
-	font-size: 40px;
-	padding: 1rem;
-	margin: 2rem;
-}
-
-.hero-image {
-	background: url("./logo.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 500px;
-	position: relative;
-	margin: 2rem;
-
-}
-
-.reservation {
-	text-align: center;
-	margin: 1rem;
-}
-
 .h2 {
 	color: cornflowerblue;
 	text-decoration: underline;
@@ -112,32 +78,26 @@ Form {
 	color: midnightblue;
 }
 
-.form {
-	padding: 1rem;
+p {
+	color: black;
+	font-size: 25px;
+	margin: 2rem;
+}
+
+.fav>p {
+	color: cornflowerblue;
+}
+
+.reservation {
+	text-align: center;
 	margin: 1rem;
 }
 
-.button {
-	padding: 1rem;
-	font-size: 35px;
-	background-color: white;
-	color: black;
-	border: none;
-	border-radius: 20px;
-}
-
-.button:hover {
-	background-color: blue;
-	color: white;
-}
-
-input::placeholder {
-	font-size: 25px;
-}
-
-input.form {
-	padding: 20px;
-	width: 30%;
+.about-h5 {
+	color: brown;
+	text-decoration: underline;
+	margin: 3rem;
+	font-size: 30px;
 }
 
 .review {
@@ -161,6 +121,76 @@ input.form {
 	color: coral;
 }
 
+/**** Table Styles ****/
+Table {
+	width: 90%;
+	height: 20%;
+	font-family: monospace;
+	color: white;
+	background-color: green;
+	margin: 3rem;
+	border-color: darkgreen;
+	font-size: 60px;
+	border-spacing: 5;
+}
+
+/**** Form Styles ****/
+Form {
+	font-family: monospace;
+	text-align: center;
+	color: white;
+	background-color: green;
+	font-size: 40px;
+	padding: 1rem;
+	margin: 2rem;
+}
+
+.form {
+	padding: 1rem;
+	margin: 1rem;
+}
+
+input::placeholder {
+	font-size: 25px;
+}
+
+input.form {
+	padding: 20px;
+	width: 30%;
+}
+
+td {
+	text-align: center;
+}
+
+/**** Style for Hero Image. ****/
+.hero-image {
+	background: url("./logo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	margin: 2rem;
+
+}
+
+/**** Button Styles ****/
+.button {
+	padding: 1rem;
+	font-size: 35px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 20px;
+}
+
+.button:hover {
+	background-color: blue;
+	color: white;
+}
+
+/**** Hero Image style for Vegetables on About.html ****/
 .about2 {
 	background: url("./vegTable.jpg");
 	background-position: center;
@@ -169,27 +199,7 @@ input.form {
 	margin: 2rem;
 }
 
-.about-h5 {
-	color: brown;
-	text-decoration: underline;
-	margin: 3rem;
-	font-size: 30px;
-}
-
-p {
-	color: black;
-	font-size: 25px;
-	margin: 2rem;
-}
-
-td {
-	text-align: center;
-}
-
-.fav>p {
-	color: cornflowerblue;
-}
-
+/**** Contact & Social Styles ****/
 .contact {
 	text-decoration: none;
 }
@@ -206,6 +216,7 @@ td {
 	color: crimson;
 }
 
+/**** Media Query for device width greater or equal to 768px ****/
 @media only screen and (min-device-width: 768px) {
 	nav a {
 		font-size: 30px;
@@ -253,6 +264,7 @@ td {
 	}
 }
 
+/**** Media Query for device width greater or equal to 1200px ****/
 @media only screen and (min-device-width: 1200px) {
 	.hero-image {
 		margin: 0;
